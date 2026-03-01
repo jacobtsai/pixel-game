@@ -58,7 +58,7 @@ VITE_QUESTION_COUNT=5
 - **頭像生成**：DiceBear API (自動生成獨一無二的像素關主)
 - **進程管理**：PM2
 
-## � GitHub 發佈與開源資訊
+## 🌐 GitHub 發佈與開源資訊
 
 本專案已初始化 Git 儲存庫，並可隨時發佈至 GitHub。
 
@@ -69,6 +69,12 @@ git remote add origin <你的_GitHub_儲存庫_URL>
 git branch -M main
 git push -u origin main
 ```
+
+### 💡 佈署常見問題 (Troubleshooting)
+若你在 GitHub Pages 遇到 `404 main.jsx` 錯誤：
+- 請確保 `vite.config.js` 中設定了 `base: './'`。
+- 請確保 `index.html` 中的 script 路徑為相對路徑 `./src/main.jsx`。
+- 本專案已預先完成此設定。
 
 ### 2. 開源授權
 本專案採用 **MIT License**，歡迎自由修改與分享。
