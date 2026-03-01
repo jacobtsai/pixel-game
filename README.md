@@ -58,9 +58,20 @@ VITE_QUESTION_COUNT=5
 - **頭像生成**：DiceBear API (自動生成獨一無二的像素關主)
 - **進程管理**：PM2
 
-## 🎬 測試與驗證
-- 可透過 `pm2 list` 查看運行狀態。
-- 已通過 Playwright 與 Native Browser Tool 完整自動化測試。
+## � GitHub 發佈與開源資訊
+
+本專案已初始化 Git 儲存庫，並可隨時發佈至 GitHub。
+
+### 1. 推送至 GitHub 指令
+如果你已經建立了 GitHub 遠端儲存庫，可以使用以下指令進行推送：
+```zsh
+git remote add origin <你的_GitHub_儲存庫_URL>
+git branch -M main
+git push -u origin main
+```
+
+### 2. 開源授權
+本專案採用 **MIT License**，歡迎自由修改與分享。
 
 ---
 *由 Antigravity 團隊開發設計*
