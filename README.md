@@ -70,11 +70,18 @@ git branch -M main
 git push -u origin main
 ```
 
+### 3. 部署到 GitHub Pages (Deployment)
+本專案已設定好自動化部署工具，只需執行以下指令：
+```zsh
+npm run build          # 編譯專案
+npx gh-pages -d dist   # 部署編譯後的 dist 資料夾到 GitHub Pages
+```
+
 ### 💡 佈署常見問題 (Troubleshooting)
-若你在 GitHub Pages 遇到 `404 main.jsx` 錯誤：
-- 請確保 `vite.config.js` 中設定了 `base: './'`。
-- 請確保 `index.html` 中的 script 路徑為相對路徑 `./src/main.jsx`。
-- 本專案已預先完成此設定。
+若你在 GitHub Pages 遇到畫面全白或 `404 main.jsx` 錯誤：
+- **正確路徑設定**：`vite.config.js` 中的 `base` 必須對應你的 GitHub 儲存庫名稱（例如：`/pixel-game/`）。
+- **正確部署目標**：GitHub Pages 應該設定為讀取 `gh-pages` 分支的內容，而非 `main` 分支的原始碼。
+- **相對路徑**：確保資源引用使用相對路徑。
 
 ### 2. 開源授權
 本專案採用 **MIT License**，歡迎自由修改與分享。
