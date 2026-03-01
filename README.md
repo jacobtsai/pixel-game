@@ -77,10 +77,13 @@ npm run build          # 編譯專案
 npx gh-pages -d dist   # 部署編譯後的 dist 資料夾到 GitHub Pages
 ```
 
+> [!IMPORTANT]
+> **關鍵設定**：請進入 GitHub 儲存庫的 **Settings > Pages**，將 **Branch** 設定為 **`gh-pages`** 分支，並點擊 **Save**。否則網頁會因為讀取到原始碼而顯示全白。
+
 ### 💡 佈署常見問題 (Troubleshooting)
 若你在 GitHub Pages 遇到畫面全白或 `404 main.jsx` 錯誤：
+- **正確部署分支**：GitHub Pages 必須讀取 `gh-pages` 分支而非 `main`。
 - **正確路徑設定**：`vite.config.js` 中的 `base` 必須對應你的 GitHub 儲存庫名稱（例如：`/pixel-game/`）。
-- **正確部署目標**：GitHub Pages 應該設定為讀取 `gh-pages` 分支的內容，而非 `main` 分支的原始碼。
 - **相對路徑**：確保資源引用使用相對路徑。
 
 ### 2. 開源授權
